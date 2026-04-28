@@ -1,0 +1,59 @@
+{
+  "name": "project-ai-sync",
+  "version": "0.1.0",
+  "description": "CLI tool to sync AI capabilities (.cursor, .claude, AGENTS.md, etc.) between projects",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "bin": {
+    "project-ai-sync": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "sync",
+    "cli",
+    "cursor",
+    "claude",
+    "copilot",
+    "agents"
+  ],
+  "author": "v-caomengqiu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orzbuer/project-ai-sync.git"
+  },
+  "homepage": "https://github.com/orzbuer/project-ai-sync#readme",
+  "bugs": {
+    "url": "https://github.com/orzbuer/project-ai-sync/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.15",
+    "open": "^8.4.2",
+    "ora": "^5.4.1",
+    "simple-git": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

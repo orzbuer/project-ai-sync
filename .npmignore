@@ -1,0 +1,6 @@
+src/
+doc/
+tsconfig.json
+.gitignore
+.project-ai-syncrc.json
+*.tgz
