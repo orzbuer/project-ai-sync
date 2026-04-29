@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "type": "commonjs",
   "bin": {
-    "project-ai-sync": "./bin/cli.js"
+    "project-ai-sync": "bin/cli.js"
   },
   "scripts": {
     "build": "tsc",
